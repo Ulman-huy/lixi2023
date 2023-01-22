@@ -449,6 +449,7 @@ img {
     background-size: cover;
     width: 350px;
 }
+
 @media screen and (max-width: 500px) {
     .container {
         width: 70%;

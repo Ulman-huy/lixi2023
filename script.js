@@ -51,11 +51,23 @@ function consoleText(words, id, colors) {
 
 const lixi = document.querySelector('.lixi');
 const QR = document.createElement('img');
-const btn = document.querySelector('button')
-
+const btn = document.querySelector('button');
+const container = document.querySelector('.container');
+const body = document.querySelector('body')
 
 btn.onclick = () => {
+    container.style.display = 'none';
     QR.src = './QR.png';
 
     lixi.appendChild(QR)
 }
+
+setInterval(() => {
+const img = document.querySelector('img');
+
+img.onclick = () => {
+  container.style.display = 'block';
+  
+  img.remove()
+}
+}, 1000)
